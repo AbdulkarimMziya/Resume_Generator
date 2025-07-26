@@ -2,6 +2,7 @@
 .resume {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -12,7 +13,6 @@
 .resume h1,
 .resume h2 {
   color: #333;
-  margin-bottom: 1rem;
 }
 
 .resume h1 {
@@ -21,7 +21,7 @@
 }
 
 .resume h2 {
-  padding-bottom: 0.5rem;
+  font-size: 1rem;
   border-bottom: 2px solid #000;
 }
 
@@ -38,6 +38,31 @@
 
 /* Personal Info Specific */
 .resume-personal-info > p {
+  font-size: 0.8rem;
+}
+
+/* Education Card Styles */
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-education-card h3 {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #333;
+}
+
+.resume-education-card p {
+  margin: 0;
   font-size: 0.8rem;
 }
 
