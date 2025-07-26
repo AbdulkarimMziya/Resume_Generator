@@ -79,3 +79,20 @@
   font-size: 0.8rem;
 }
 
+/* Skills Card Styles */
+.resume-skills-card {
+  margin-bottom: 0.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.skill-item {
+  font-size: 0.8rem;
+  text-align: start;
+  color: #333;
+}
+

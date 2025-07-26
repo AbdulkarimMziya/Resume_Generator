@@ -2,6 +2,7 @@ import '../../styles/components/Resume.css';
 import ResumeEducationCard from './ResumeEducationCard.jsx';
 import ResumeExperienceCard from './ResumeExperienceCard.jsx';
 import ResumeProjectCard from './ResumeProjectCard.jsx';
+import ResumeSkillsCard from './ResumeSkillsCard.jsx';
 
 export default function Resume() {
     let personalInfo = {
@@ -62,6 +63,21 @@ export default function Resume() {
         }
     ];
 
+    const skills = [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "MongoDB",
+        "Git",
+        "RESTful APIs",
+        "Agile Methodologies",
+        "Problem Solving",
+        "Team Collaboration",
+        "Communication"
+    ];
+
   return (
     <section className="resume">
         <section className="resume-personal-info">
@@ -79,6 +95,10 @@ export default function Resume() {
             {projects.map((project, index) => (
                 <ResumeProjectCard key={index} project={project} />
             ))}
+        </section>
+        <section className="resume-skills-info">
+            <h2>Skills</h2>
+            <ResumeSkillsCard skills={skills} />
         </section>
         <section className="resume-education-info">
             <h2>Education</h2>
