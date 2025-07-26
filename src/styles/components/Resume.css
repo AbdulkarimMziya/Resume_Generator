@@ -41,27 +41,40 @@
   font-size: 0.8rem;
 }
 
-/* Education Card Styles */
+/* Education, Experience & Project Card Styles */
+.resume-education-card,
+.resume-experience-card,
+.resume-project-card {
+  margin-bottom: 0.5rem;
+}
 
-.education-header {
+.education-header,
+.experience-header,
+.project-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.education-details {
+.education-details,
+.experience-details,
+.project-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.resume-education-card h3 {
+.resume-education-card h3,
+.resume-experience-card h3,
+.resume-project-card h3 {
   font-size: 0.8rem;
   margin: 0;
   color: #333;
 }
 
-.resume-education-card p {
+.resume-education-card p,
+.resume-experience-card p,
+.resume-project-card p {
   margin: 0;
   font-size: 0.8rem;
 }
