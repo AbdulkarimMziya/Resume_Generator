@@ -1,4 +1,4 @@
-import './styles/components/App.css'
+import './styles/App.css'
 import Resume from './components/Resume/Resume'
 import PersonalDetails from './components/PersonalDetails.jsx'
 
