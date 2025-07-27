@@ -17,18 +17,19 @@
   margin-bottom: 1rem;
 }
 
-.form-group label {
-  display: block;
+.form-row {
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #333;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
+  padding: 0.25rem;
+  border: 1px solid #D6D9DC;
   border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.3s ease;

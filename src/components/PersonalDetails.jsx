@@ -1,8 +1,35 @@
-export default function PersonalDetails() {
+
+import PersonalDetailsForm from "./PersonalDetailsForm";
+import "../styles/components/PersonalDetails.css";
+
+export default function PersonalDetails(
+  {
+    name,
+    email,
+    linkedIn,
+    github,
+    portfolio,
+    setName,
+    setEmail,
+    setLinkedIn,
+    setGithub,
+    setPortfolio
+  }
+) {
   return (
     <section className="personal-details">
-      <h2>Personal Details</h2>
-      <p>This is where the personal details content will be displayed.</p>
+      <PersonalDetailsForm
+        name={name}
+        email={email}
+        linkedIn={linkedIn}
+        github={github}
+        portfolio={portfolio}
+        setName={setName}
+        setEmail={setEmail}
+        setLinkedIn={setLinkedIn}
+        setGithub={setGithub}
+        setPortfolio={setPortfolio}
+      />
     </section>
   );
 }
