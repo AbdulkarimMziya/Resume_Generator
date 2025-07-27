@@ -23,7 +23,13 @@ function App() {
         setGithub={setGithub}
         setPortfolio={setPortfolio}
       />
-      <Resume />
+      <Resume 
+        name={name}
+        email={email}
+        linkedIn={linkedIn}
+        github={github}
+        portfolio={portfolio}
+      />
     </div>
   )
 }

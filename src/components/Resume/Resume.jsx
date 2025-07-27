@@ -4,7 +4,15 @@ import ResumeExperienceCard from './ResumeExperienceCard.jsx';
 import ResumeProjectCard from './ResumeProjectCard.jsx';
 import ResumeSkillsCard from './ResumeSkillsCard.jsx';
 
-export default function Resume() {
+export default function Resume(
+    {
+        name,
+        email,
+        linkedIn,
+        github,
+        portfolio
+    }
+) {
     let personalInfo = {
         name: "John Doe",
         email: "john.doe@gmail.com",
@@ -81,8 +89,8 @@ export default function Resume() {
   return (
     <section className="resume">
         <section className="resume-personal-info">
-            <h1>{personalInfo.name}</h1>
-            <p><b>{personalInfo.email} | {personalInfo.linkedIn} | {personalInfo.github}</b></p>
+            <h1>{name}</h1>
+            <p><b>{email} | {linkedIn} | {github} | {portfolio}</b></p>
         </section>
         <section className="resume-experience-info">
             <h2>Experience</h2>
