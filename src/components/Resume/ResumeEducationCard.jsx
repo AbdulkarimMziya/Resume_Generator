@@ -9,7 +9,8 @@ export default function ResumeEducationCard({ education }) {
                 <p>{education.fieldOfStudy}</p>
                 <p>{education.degreeLevel}</p>
             </div>
-            <div>
+            <div className="education-details">
+                <p>{education.gpa}</p>
                 <p>{education.location}</p>
             </div>
         </div>

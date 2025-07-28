@@ -1,12 +1,16 @@
+/* ===================================
+   MAIN APPLICATION LAYOUT
+   =================================== */
+
 .app {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   gap: 20px;
-  background-color: #ededed;
+  background-color: var(--bg-secondary);
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
-
-

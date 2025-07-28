@@ -1,15 +1,16 @@
 .personal-details {
   padding: 20px;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
 }
 
 .personal-details h2 {
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 1rem;
-  border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid var(--success-color);
   padding-bottom: 0.5rem;
 }
 
@@ -29,7 +30,7 @@
 .form-group textarea {
   width: 100%;
   padding: 0.25rem;
-  border: 1px solid #D6D9DC;
+  border: 1px solid var(--border-light);
   border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
@@ -38,11 +39,110 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
 .form-group textarea {
   resize: vertical;
   min-height: 100px;
+}
+
+/* Shared styles for Experience, Education, and Project components */
+.personal-experience,
+.personal-education,
+.personal-project,
+.personal-skills {
+    margin-bottom: 2rem;
+}
+
+.personal-experience h2,
+.personal-education h2,
+.personal-project h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.experience-card,
+.education-card,
+.project-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-light);
+}
+
+.experience-card .company-name,
+.education-card .institution-name,
+.project-card .project-name,
+.skills-card {
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.experience-card .role,
+.education-card .degree,
+.project-card .technologies {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.add-experience-button,
+.add-education-button,
+.add-project-button,
+.add-skills-button {
+    border: 2px dotted var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.add-experience-button:hover,
+.add-education-button:hover,
+.add-project-button:hover,
+.add-skills-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-style: solid;
+}
+
+.add-experience-button:active,
+.add-education-button:active,
+.add-project-button:active,
+.add-skills-button:active {
+    transform: translateY(1px);
+}
+
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.2rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.skills-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.2rem;
+    box-shadow: var(--shadow-light);
+    
+    /* Character limiting styles */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; /* Set consistent width */
 }
