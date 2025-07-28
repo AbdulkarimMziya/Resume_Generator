@@ -11,6 +11,23 @@
   overflow-y: auto;
 }
 
+/* Responsive resume container */
+@media (max-width: 768px) {
+  .resume {
+    padding: 15px;
+    max-height: none;
+    overflow-y: visible;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+    padding: 10px;
+    gap: 0.3rem;
+  }
+}
+
 /* Typography Base Styles */
 .resume h1,
 .resume h2 {
@@ -30,6 +47,35 @@
 .resume p {
   color: #666;
   line-height: 1.6;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .resume h1 {
+    font-size: 1.3rem;
+  }
+  
+  .resume h2 {
+    font-size: 0.9rem;
+  }
+  
+  .resume p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume h1 {
+    font-size: 1.2rem;
+  }
+  
+  .resume h2 {
+    font-size: 0.8rem;
+  }
+  
+  .resume p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Centered Text Elements */
@@ -92,9 +138,37 @@
   gap: 0.5rem;
 }
 
+/* Responsive skills grid */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 0.2rem;
+  }
+}
+
 .skill-item {
   font-size: 0.8rem;
   text-align: start;
   color: #333;
+}
+
+/* Responsive skill items */
+@media (max-width: 768px) {
+  .skill-item {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-item {
+    font-size: 0.7rem;
+  }
 }
 

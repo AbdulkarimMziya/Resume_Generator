@@ -11,6 +11,7 @@ export default function Skills({ skills = [], setSkills }) {
 
     const handleAddSkill = () => {
         setShowForm(!showForm);
+        alert("This feature is not implemented yet. Please check back later.");
     };
 
     return (
@@ -22,7 +23,6 @@ export default function Skills({ skills = [], setSkills }) {
                 ))}
             </ul>
             <div className="add-skills-button" onClick={handleAddSkill}>+ Add Skill</div>
-            {showForm && <SkillsForm  />}
         </div>
     );
 }

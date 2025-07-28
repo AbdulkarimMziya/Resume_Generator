@@ -14,3 +14,36 @@
   height: 100vh;
   overflow: hidden;
 }
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .app {
+    max-width: 100%;
+    padding: 15px;
+    gap: 15px;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .app {
+    padding: 5px;
+    gap: 5px;
+  }
+}
