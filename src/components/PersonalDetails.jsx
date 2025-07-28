@@ -5,7 +5,6 @@ import Experience from "./Experience/Experience";
 import Project from "./Project/Project";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
-import { experiencesList, projectsList, educationList, skillsList } from "../data/data";
 
 export default function PersonalDetails(
   {
@@ -14,11 +13,19 @@ export default function PersonalDetails(
     linkedIn,
     github,
     portfolio,
+    skills,
+    experiences,
+    projects,
+    education,
     setName,
     setEmail,
     setLinkedIn,
     setGithub,
-    setPortfolio
+    setPortfolio,
+    setSkills,
+    setExperiences,
+    setProjects,
+    setEducation
   }
 ) {
   return (
@@ -35,10 +42,10 @@ export default function PersonalDetails(
         setGithub={setGithub}
         setPortfolio={setPortfolio}
       />
-      <Experience experiences={experiencesList} />
-      <Project projects={projectsList} />
-      <Skills skills={skillsList} />
-      <Education education={educationList} />
+      <Experience experiences={experiences} setExperiences={setExperiences} />
+      <Project projects={projects} setProjects={setProjects} />
+      <Skills skills={skills} setSkills={setSkills} />
+      <Education education={education} setEducation={setEducation} />
     </section>
   );
 }

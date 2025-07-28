@@ -1,5 +1,4 @@
 import '../../styles/components/Resume.css';
-import { experiencesList, projectsList, skillsList, educationList }  from '../../data/data.js';
 import ResumeEducationCard from './ResumeEducationCard.jsx';
 import ResumeExperienceCard from './ResumeExperienceCard.jsx';
 import ResumeProjectCard from './ResumeProjectCard.jsx';
@@ -11,7 +10,11 @@ export default function Resume(
         email,
         linkedIn,
         github,
-        portfolio
+        portfolio,
+        skills,
+        experiences,
+        projects,
+        education
     }
 ) {
     
@@ -23,23 +26,23 @@ export default function Resume(
         </section>
         <section className="resume-experience-info">
             <h2>Experience</h2>
-            {experiencesList.map((exp) => (
+            {experiences.map((exp) => (
                 <ResumeExperienceCard key={exp.id} experience={exp} />
             ))}
         </section>
         <section className="resume-projects-info">
             <h2>Projects</h2>
-            {projectsList.map((project, index) => (
+            {projects.map((project, index) => (
                 <ResumeProjectCard key={index} project={project} />
             ))}
         </section>
         <section className="resume-skills-info">
             <h2>Skills</h2>
-            <ResumeSkillsCard skills={skillsList} />
+            <ResumeSkillsCard skills={skills} />
         </section>
         <section className="resume-education-info">
             <h2>Education</h2>
-            {educationList.map((edu, index) => (
+            {education.map((edu, index) => (
                 <ResumeEducationCard key={index} education={edu} />
             ))}
         </section>

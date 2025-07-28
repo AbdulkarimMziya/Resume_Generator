@@ -61,7 +61,7 @@ export const skillsList = [
     "HTML",
     "CSS",
     "MongoDB",
-    "Git",
+    "Gits",
     "RESTful APIs",
     "Agile Methodologies",
     "Problem Solving",
